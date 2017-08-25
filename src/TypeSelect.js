@@ -20,9 +20,6 @@ export default class TypeSelect extends Component {
     const { id, types } = this.props;
 
     return (
-      // <select id={id} onChange={this.handleTypeChange}>
-      //   {types.map(this.renderItem)}
-      // </select>
       <FormControl id={id} onChange={this.handleTypeChange} componentClass="select" placeholder="select">
          {types.map(this.renderItem)}
       </FormControl>

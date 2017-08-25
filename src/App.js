@@ -209,7 +209,6 @@ class App extends Component {
   }
 
   onInputValueChange = (value) => {
-    console.log("input value: " +value)
     this.setState({inputValue: value})
   }
 
@@ -254,11 +253,11 @@ class App extends Component {
           <Row>         
             <Col md={12}>
               <Well>
-              <p>A demo application for converting units of measurement, Build using React and Bootstrap for React.</p>
+              <p>A demo application for converting units of measurement, built using React and Bootstrap for React.</p>
 
-              <p>Enter a number in the input box to have it converted into one or more outputs. Add additional output types by selecting the type using the dropdown and clicking the Add output conversion button.</p>
+              <p>Enter a number in the input box to have it converted into one or more outputs. Add additional outputs by selecting the type using the dropdown and clicking the Add output conversion button.</p>
 
-              <p>Click on an output in the output list to remove it.</p>
+              <p>Click on an item in the output list to remove it.</p>
             </Well>
             </Col>
             
