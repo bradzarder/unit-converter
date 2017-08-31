@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
 import List from './List'
 import Input from './Input'
 import TypeSelect from './TypeSelect'
 import AddConversionButton from './AddConversionButton'
-import { PageHeader, Well, InputGroup, Grid, Row, Col, Panel} from 'react-bootstrap';
+import { Jumbotron, PageHeader, Well, InputGroup, Grid, Row, Col, Panel} from 'react-bootstrap';
+
 
 class App extends Component {
 
@@ -65,7 +65,7 @@ class App extends Component {
           },
           {
             inputType: "Centimeters",
-            conversion: (x) => x*2.545
+            conversion: (x) => x/2.545
           },
           {
             inputType: "Millimeters",
@@ -73,7 +73,7 @@ class App extends Component {
           },
           {
             inputType: "Meters",
-            conversion: (x) => x*.02545
+            conversion: (x) => x/.02545
           },
         ]
       },
@@ -95,7 +95,7 @@ class App extends Component {
           },
           {
             inputType: "Centimeters",
-            conversion: (x) => x*0.109361
+            conversion: (x) => x*0.0109361
           },
           {
             inputType: "Millimeters",
@@ -129,11 +129,11 @@ class App extends Component {
           },
           {
             inputType: "Millimeters",
-            conversion: (x) => x*10
+            conversion: (x) => x/10
           },
           {
             inputType: "Meters",
-            conversion: (x) => x/100
+            conversion: (x) => x*100
           },  
         ]
       },
@@ -155,7 +155,7 @@ class App extends Component {
           },
           {
             inputType: "Centimeters",
-            conversion: (x) => x/10
+            conversion: (x) => x*10
           },
           {
             inputType: "Millimeters",
@@ -163,7 +163,7 @@ class App extends Component {
           },
           {
             inputType: "Meters",
-            conversion: (x) => x/1000
+            conversion: (x) => x*1000
           },
         ]
       },
@@ -185,11 +185,11 @@ class App extends Component {
           },
           {
             inputType: "Centimeters",
-            conversion: (x) => x*100
+            conversion: (x) => x/100
           },
           {
             inputType: "Millimeters",
-            conversion: (x) => x*1000
+            conversion: (x) => x/1000
           },
           {
             inputType: "Meters",
@@ -237,26 +237,34 @@ class App extends Component {
 
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Unit Conversions</h2>
-        </div>
+        <Grid>
+        <Row>
+          <Col lg={12}>
+            <Jumbotron>
+              <p>This is a sample application built using React and Bootstrap for React.</p>
+              <p>
+                The application uses standard and custom React components to allow the user to submit input and receive output in real time. 
+                The application state is tracked via React component states. 
+              </p>
+              <p>The source code for this project is available on <a href="https://github.com/bradzarder/unit-converter">GitHub</a></p>
+            </Jumbotron>
+          </Col>
+        </Row>
+        </Grid>
 
-        <br/>
-        <br/>
+      
+        <br/>     
 
         <PageHeader>Unit Converter <small>React and bootstrap demo</small></PageHeader>
-
 
         <Grid>
 
           <Row>         
             <Col md={12}>
               <Well>
-              <p>A demo application for converting units of measurement, built using React and Bootstrap for React.</p>
-
-              <p>Enter a number in the input box to have it converted into one or more outputs. Add additional outputs by selecting the type using the dropdown and clicking the Add output conversion button.</p>
-
+              <p>A demo application for converting units of measurement.</p>
+              <p>Enter a number in the input box to have it converted into one or more outputs.</p>
+              <p>Add additional outputs by selecting the type using the dropdown and clicking the Add output conversion button.</p>
               <p>Click on an item in the output list to remove it.</p>
             </Well>
             </Col>
