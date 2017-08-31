@@ -65,7 +65,7 @@ class App extends Component {
           },
           {
             inputType: "Centimeters",
-            conversion: (x) => x*2.545
+            conversion: (x) => x/2.545
           },
           {
             inputType: "Millimeters",
@@ -73,7 +73,7 @@ class App extends Component {
           },
           {
             inputType: "Meters",
-            conversion: (x) => x*.02545
+            conversion: (x) => x/.02545
           },
         ]
       },
@@ -95,7 +95,7 @@ class App extends Component {
           },
           {
             inputType: "Centimeters",
-            conversion: (x) => x*0.109361
+            conversion: (x) => x*0.0109361
           },
           {
             inputType: "Millimeters",
@@ -129,11 +129,11 @@ class App extends Component {
           },
           {
             inputType: "Millimeters",
-            conversion: (x) => x*10
+            conversion: (x) => x/10
           },
           {
             inputType: "Meters",
-            conversion: (x) => x/100
+            conversion: (x) => x*100
           },  
         ]
       },
@@ -155,7 +155,7 @@ class App extends Component {
           },
           {
             inputType: "Centimeters",
-            conversion: (x) => x/10
+            conversion: (x) => x*10
           },
           {
             inputType: "Millimeters",
@@ -163,7 +163,7 @@ class App extends Component {
           },
           {
             inputType: "Meters",
-            conversion: (x) => x/1000
+            conversion: (x) => x*1000
           },
         ]
       },
@@ -185,11 +185,11 @@ class App extends Component {
           },
           {
             inputType: "Centimeters",
-            conversion: (x) => x*100
+            conversion: (x) => x/100
           },
           {
             inputType: "Millimeters",
-            conversion: (x) => x*1000
+            conversion: (x) => x/1000
           },
           {
             inputType: "Meters",
